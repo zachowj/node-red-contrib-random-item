@@ -52,4 +52,25 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="random-item"></script>
+<script type="text/x-red" data-help-name="random-item">
+<p>A node that selects a random item from an array.</p>
+
+<h3>Inputs</h3>
+<p>Input needs to be in a JSON formatted array.</p>
+
+<p>Examples of inputs:</p>
+<ul>
+    <li><pre>["first", "second", "third", "fourth"]</pre></li>
+    <li><pre>[1,2,3,4,5]</pre></li>
+    <li>
+        <pre>[
+    {"name": "George Jetson", "role": "father"},
+    {"name": "Jane Jetson", "role": "mother"},
+    {"name": "Judy Jetson", "role": "daugter"}, 
+    {"name": "Elroy Jetson", "role": "son"}
+]</pre></li>
+</ul>
+
+<h3>Outputs</h3>
+Output will either be a single data type or an array of items if the <code>Max # of items</code> is greater than one.
+</script>

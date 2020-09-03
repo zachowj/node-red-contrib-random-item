@@ -7,10 +7,7 @@ module.exports = function (RED) {
             const array = getArray(config.inputType, config.input, msg);
 
             if (!Array.isArray(array)) {
-                node.error(
-                    `${JSON.stringify(array)} is not a valid array`,
-                    msg
-                );
+                node.error(`Input is not a valid array`, msg);
                 node.status({
                     fill: 'red',
                     shape: 'ring',
