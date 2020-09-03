@@ -5,7 +5,7 @@
         inputs: 1,
         outputs: 1,
         icon: 'random-item.png',
-        label: () => this.name || 'random-item',
+        label: function () { return this.name || 'random-item'; },
         defaults: {
             name: { value: '' },
             input: { value: 'payload' },
