@@ -79,6 +79,7 @@ module.exports = function (RED) {
                 node.error(
                     RED._('change.errors.invalid-expr', { error: e.message })
                 );
+                return;
             }
         } else if (location === 'env') {
             return RED.util.evaluateNodeProperty(property, 'env', node);
