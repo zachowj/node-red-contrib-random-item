@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/zachowj/node-red-contrib-random-item/compare/v1.0.0...v1.0.1) (2020-09-03)
+
+
+### Bug Fixes
+
+* Add node-red as keyword ([2323247](https://www.github.com/zachowj/node-red-contrib-random-item/commit/2323247679ae7ffed78b346b3aca5a48a162a62c))
+
 ## 1.0.0 (2020-09-03)
 
 
