@@ -4,6 +4,8 @@
   "description": "Node-RED node that randomly selects an item of an array",
   "main": "random-item.js",
   "scripts": {
+    "lint": "eslint . && prettier --check **/*.{css,js,md,html}",
+    "lint:fix": "eslint . --fix && prettier --write **/*.{css,js,md,html}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jason Zachow",
@@ -13,5 +15,11 @@
       "random-item": "random-item.js"
     }
   },
-  "repository": "https://github.com/zachowj/node-red-contrib-random-item.git"
+  "repository": "https://github.com/zachowj/node-red-contrib-random-item.git",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.1"
+  }
 }
