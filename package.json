@@ -1,0 +1,17 @@
+{
+  "name": "node-red-contrib-random-item",
+  "version": "0.0.1",
+  "description": "Node-RED node that randomly selects an item of an array",
+  "main": "random-item.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Zachow",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "random-item": "random-item.js"
+    }
+  },
+  "repository": "https://github.com/zachowj/node-red-contrib-random-item.git"
+}

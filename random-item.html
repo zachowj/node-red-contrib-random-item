@@ -1,0 +1,56 @@
+<script type="text/javascript">
+  RED.nodes.registerType("random-item", {
+    category: "function",
+    color: "#cc99cc",
+    inputs: 1,
+    outputs: 1,
+    icon: "random-item.png",
+    label: () => this.name || "random-item",
+    defaults: {
+      name: { value: "" },
+      input: { value: "payload" },
+      inputType: { value: "msg" },
+      output: { value: "payload" },
+      outputType: { value: "msg" },
+      number: { value: 1 }
+    },
+    oneditprepare: () => {
+      $("#node-input-input").typedInput({
+        types: ["msg", "flow", "global", "json"],
+        typeField: "#node-input-inputType"
+      });
+      $("#node-input-output").typedInput({
+        types: ["msg", "flow", "global"],
+        typeField: "#node-input-outputType"
+      });
+      $("#node-input-number").spinner({ min: 1 });
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="random-item">
+  <div class="form-row">
+      <label for="node-input-name">Name</label>
+      <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-input">Input</label>
+    <input type="text" id="node-input-input" style="width: 70%">
+    <input type="hidden" id="node-input-inputType">
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-number">Max # items returned</label>
+    <input type="text" id="node-input-number" style="text-align:end; width:50px !important">
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-input">Output</label>
+    <input type="text" id="node-input-output" style="width: 70%">
+    <input type="hidden" id="node-input-outputType">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="random-item">  
+</script>
