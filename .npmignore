@@ -1,0 +1,10 @@
+coverage/
+docs/
+test/
+.eslintrc.js
+.github
+.prettierignore
+.prettierrc
+.vscode
+yarn.lock
+CHANGELOG.md
