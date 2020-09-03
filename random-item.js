@@ -75,6 +75,16 @@ module.exports = function (RED) {
             } catch (e) {
                 return property;
             }
+        } else if (location === 'jsonata') {
+            try {
+                return RED.util.prepareJSONataExpression(property, node);
+            } catch (e) {
+                node.error(
+                    RED._('change.errors.invalid-expr', { error: e.message })
+                );
+            }
+        } else if (location === 'env') {
+            return RED.util.evaluateNodeProperty(property, 'env', node);
         }
 
         const contextKey = RED.util.parseContextStore(property);
