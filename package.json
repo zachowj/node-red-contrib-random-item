@@ -10,6 +10,10 @@
   },
   "author": "Jason Zachow",
   "license": "MIT",
+  "keywords": [
+    "node-red",
+    "random"
+  ],
   "node-red": {
     "nodes": {
       "random-item": "random-item.js"
