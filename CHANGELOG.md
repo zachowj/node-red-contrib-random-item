@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/zachowj/node-red-contrib-random-item/compare/v1.0.1...v1.0.2) (2020-09-04)
+
+
+### Bug Fixes
+
+* stop output if invalid jsonata ([454be6c](https://www.github.com/zachowj/node-red-contrib-random-item/commit/454be6c2bb2f62aba5263e8265a931691a7b0d1e))
+
 ### [1.0.1](https://www.github.com/zachowj/node-red-contrib-random-item/compare/v1.0.0...v1.0.1) (2020-09-03)
 
 
