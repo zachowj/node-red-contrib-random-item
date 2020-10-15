@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/zachowj/node-red-contrib-random-item/compare/v1.0.2...v1.0.3) (2020-10-15)
+
+
+### Bug Fixes
+
+* don't mutate the array ([8f536c2](https://www.github.com/zachowj/node-red-contrib-random-item/commit/8f536c22218c1a2b58281b74ffa3090ab333c009)), closes [#6](https://www.github.com/zachowj/node-red-contrib-random-item/issues/6)
+* Use the correct context when fetching flow, global values ([10d63f3](https://www.github.com/zachowj/node-red-contrib-random-item/commit/10d63f365bd390944584b8d0db05a81f26eae3d0)), closes [#4](https://www.github.com/zachowj/node-red-contrib-random-item/issues/4)
+
 ### [1.0.2](https://www.github.com/zachowj/node-red-contrib-random-item/compare/v1.0.1...v1.0.2) (2020-09-04)
 
 
