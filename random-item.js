@@ -1,3 +1,5 @@
+const sampleSize = require('lodash.samplesize');
+
 module.exports = function (RED) {
     function RandomItemNode(config) {
         RED.nodes.createNode(this, config);
@@ -26,14 +28,8 @@ module.exports = function (RED) {
                 return;
             }
 
-            let randomItems = [];
-            const maxLoops = Math.min(config.number || 1, array.length);
-
-            for (let i = 0; i < maxLoops; i++) {
-                const index = Math.floor(Math.random() * array.length);
-                randomItems = [...randomItems, ...array.splice(index, 1)];
-            }
-
+            const count = Math.min(config.number || 1, array.length);
+            const randomItems = sampleSize(array, count);
             const contextKey = RED.util.parseContextStore(config.output);
             const payload =
                 randomItems.length === 1 ? randomItems[0] : randomItems;
